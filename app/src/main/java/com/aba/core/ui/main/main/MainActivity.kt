@@ -1,9 +1,13 @@
 package com.aba.core.ui.main.main
 
+import android.graphics.PorterDuff
 import android.os.Bundle
+import android.view.MenuItem
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.aba.core.R
 import com.aba.core.base.BaseActivity
+import com.aba.core.extension.changeUpArrow
 import com.aba.core.ui.main.main.list.ListingAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayoutMediator
@@ -21,6 +25,7 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initializeBottomNavigation()
+        changeUpArrow()
         initViewPager()
         initTabLayout()
     }
@@ -29,7 +34,7 @@ class MainActivity : BaseActivity() {
         TabLayoutMediator(this.tabLayout, viewPager) { tab, position ->
             when (position) {
                 0 -> tab.text = getString(R.string.featured)
-                1 -> tab.text =  getString(R.string.all)
+                1 -> tab.text = getString(R.string.all)
                 2 -> tab.text = getString(R.string.favorites)
                 else -> tab.text = getString(R.string.favorites)
             }
@@ -59,4 +64,11 @@ class MainActivity : BaseActivity() {
 
     fun navigateTo(fragment: Fragment) = supportFragmentManager.beginTransaction()
         .add(R.id.mainActivityContainer, fragment).addToBackStack(null).commit()
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId ?: 0) {
+            android.R.id.home -> onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }

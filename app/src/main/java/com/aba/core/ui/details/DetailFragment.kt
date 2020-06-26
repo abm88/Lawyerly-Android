@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import com.aba.core.R
 import com.aba.core.base.BaseFragment
 import com.aba.core.domain.data.LawyerDomainModel
+import com.aba.core.extension.disableHomeUpArrow
+import com.aba.core.extension.enableHomeUpArrow
 import com.aba.core.extension.show
 import com.aba.core.utils.LoadImage
 import kotlinx.android.synthetic.main.fragment_details.*
@@ -16,6 +18,7 @@ import kotlinx.android.synthetic.main.include_detail_rating.*
 import kotlinx.android.synthetic.main.include_detail_reviews.*
 import kotlinx.android.synthetic.main.include_detail_top_card.*
 import kotlinx.android.synthetic.main.include_gradient_button.*
+
 
 class DetailFragment : BaseFragment() {
 
@@ -38,6 +41,16 @@ class DetailFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         initView()
         populateViews()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        enableHomeUpArrow()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        disableHomeUpArrow()
     }
 
     private fun populateViews() = arguments?.run {
