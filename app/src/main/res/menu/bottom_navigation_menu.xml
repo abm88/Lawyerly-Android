@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:enabled="true"
+        android:id="@+id/bottomItemMain"
+        android:icon="@drawable/hammer"
+        android:title="@string/home" />
+    <item
+        android:enabled="true"
+        android:id="@+id/bottomItemCalendar"
+        android:icon="@drawable/calendar"
+        android:title="@string/calendar" />
+    <item
+        android:enabled="true"
+        android:id="@+id/bottomItemStar"
+        android:icon="@drawable/star"
+        android:title="@string/star" />
+    <item
+        android:enabled="true"
+        android:id="@+id/bottomItemBooking"
+        android:icon="@drawable/booking"
+        android:title="@string/booking" />
+    <item
+        android:enabled="true"
+        android:id="@+id/bottomItemSettings"
+        android:icon="@drawable/setting"
+        android:title="@string/settings" />
+</menu>

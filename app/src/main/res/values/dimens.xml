@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parallax_height">140dp</dimen>
+    <dimen name="cardview_height">100dp</dimen>
+    <dimen name="cardview_height_large">140dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_intermediate">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+    <dimen name="margin_xxlarge">28dp</dimen>
+    <dimen name="margin_xxxlarge">32dp</dimen>
+    <dimen name="margin_xxxxlarge">36dp</dimen>
+    <dimen name="margin_xxxxxlarge">40dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_small_small">10dp</dimen>
+    <dimen name="margin_xintermediate">14dp</dimen>
+    <dimen name="margin_xsmall">8dp</dimen>
+    <dimen name="margin_xxsmall">6dp</dimen>
+    <dimen name="margin_xxsmall_small">5dp</dimen>
+    <dimen name="margin_xxxsmall">4dp</dimen>
+    <dimen name="margin_xxxxsmall">2dp</dimen>
+    <dimen name="margin_xxxxxsmall">1dp</dimen>
+    <dimen name="item_image_size">98dp</dimen>
+
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_large">20sp</dimen>
+    <dimen name="font_intermediate">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_xsmall">12sp</dimen>
+    <dimen name="font_xxsmall">10sp</dimen>
+
+</resources>

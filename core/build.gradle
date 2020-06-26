@@ -1,0 +1,17 @@
+apply from: '../common_lib.gradle'
+
+dependencies {
+    api project(":lib-theme")
+
+    // OKHttp
+    api okhttp_interceptor.interceptor
+
+    // retrofit
+    api retrofitRx.retrofitConverterGson
+    api retrofitRx.retrofitRxjavaAdapter
+}
+
+
+configurations {
+    unitTestArtifact
+}

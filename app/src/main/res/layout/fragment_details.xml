@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey90">
+
+    <ImageView
+        android:id="@+id/detailVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xxsmall_small"
+        android:layout_marginEnd="@dimen/margin_intermediate"
+        android:elevation="@dimen/font_small"
+        android:src="@drawable/verified"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detailBanner"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/cardview_height_large"
+        android:layout_marginEnd="@dimen/margin_xxsmall_small"
+        android:elevation="@dimen/margin_small"
+        android:minWidth="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/detailBannerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/margin_medium"
+        android:text="@string/first_free_consultation"
+        android:textColor="@color/colorGrey90"
+        android:textSize="@dimen/font_xxsmall"
+        app:layout_constraintBottom_toBottomOf="@id/detailBanner"
+        app:layout_constraintEnd_toEndOf="@id/detailBanner"
+        app:layout_constraintStart_toStartOf="@id/detailBanner"
+        app:layout_constraintTop_toTopOf="@id/detailBanner" />
+
+    <FrameLayout
+        android:id="@+id/topCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <include layout="@layout/include_detail_top_card" />
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_xxxxxsmall"
+        android:layout_marginStart="@dimen/margin_xsmall"
+        android:layout_marginEnd="@dimen/margin_xsmall"
+        android:layout_marginBottom="@dimen/margin_xsmall"
+        android:elevation="@dimen/margin_xsmall"
+        app:cardCornerRadius="@dimen/margin_xsmall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topCardView">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_small">
+
+            <LinearLayout
+                android:id="@+id/detailBadges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <include layout="@layout/include_detail_rating"/>
+                <include layout="@layout/include_detail_reviews"/>
+                <include layout="@layout/include_detail_ranking"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/horizantalSeparator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:maxWidth="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_xxxsmall"
+                app:layout_constraintTop_toBottomOf="@+id/detailBadges"
+                android:background="@drawable/separator_gradient_horizantal" />
+
+
+            <LinearLayout
+                android:id="@+id/detailDateAndTimeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                app:layout_constraintTop_toBottomOf="@id/horizantalSeparator1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:weightSum="15"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_xsmall"
+                    android:text="@string/member_since"/>
+
+                <FrameLayout
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/horizantalSeparator"
+                        android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:maxWidth="1dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorGrey80" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_xsmall"
+                    android:text="@string/respnse_time"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/horizantalSeparator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:maxWidth="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_xxxsmall"
+                app:layout_constraintTop_toBottomOf="@+id/detailDateAndTimeInfo"
+                android:background="@drawable/separator_gradient_horizantal" />
+
+
+            <LinearLayout
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_intermediate"
+                app:layout_constraintTop_toBottomOf="@id/horizantalSeparator2"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/description"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailDescriptionText"
+                app:layout_constraintTop_toBottomOf="@id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_xintermediate"
+                android:text="@string/lorem_ipsum_small"/>
+
+            <TextView
+                android:id="@+id/horizantalSeparator3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:maxWidth="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_xxxsmall"
+                app:layout_constraintTop_toBottomOf="@+id/detailDescriptionText"
+                android:background="@drawable/separator_gradient_horizantal" />
+
+
+            <LinearLayout
+                android:id="@+id/detailAnotherInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_intermediate"
+                app:layout_constraintTop_toBottomOf="@id/horizantalSeparator3"
+                android:orientation="horizontal"
+                android:weightSum="10">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/another_info"/>
+            </LinearLayout>
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/detailAnotherInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_xintermediate"
+                android:text="@string/lorem_ipsum"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

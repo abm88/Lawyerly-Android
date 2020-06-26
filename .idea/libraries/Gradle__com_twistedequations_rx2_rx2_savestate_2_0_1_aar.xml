@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.twistedequations.rx2:rx2-savestate:2.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/09cd7b9d372cc5674cc3e1a948911994/jetified-rx2-savestate-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/09cd7b9d372cc5674cc3e1a948911994/jetified-rx2-savestate-2.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twistedequations.rx2/rx2-savestate/2.0.1/88bcb975b743816011459a28e174cea6114e8942/rx2-savestate-2.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.twistedequations.rx2/rx2-savestate/2.0.1/3ff6da4cd2fd9600ee6026499c546e7bef55e746/rx2-savestate-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

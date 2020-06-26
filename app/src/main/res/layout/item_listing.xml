@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cardview_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_xxsmall"
+        app:cardCornerRadius="4dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/itemRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_large"
+                android:layout_marginEnd="@dimen/margin_small"
+                app:layout_constraintBottom_toBottomOf="@+id/itemSpeciality"
+                app:layout_constraintEnd_toEndOf="@+id/itemstar"
+                app:layout_constraintTop_toTopOf="@+id/itemSpeciality"
+                tools:text="$55.50" />
+            <TextView
+                android:id="@+id/itemRateRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginBottom="2dp"
+                android:textSize="@dimen/font_xxsmall"
+                app:layout_constraintBottom_toBottomOf="@+id/itemRate"
+                app:layout_constraintStart_toEndOf="@+id/itemRate"
+                android:text="/h" />
+
+            <ImageView
+                android:id="@+id/itemImageView"
+                android:layout_width="@dimen/item_image_size"
+                android:layout_height="@dimen/item_image_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/itemLawyerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_intermediate"
+                android:layout_marginTop="@dimen/margin_intermediate"
+                android:textSize="@dimen/font_medium"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/itemImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Joe Frzaier" />
+
+            <TextView
+                android:id="@+id/itemSpeciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_xxxsmall"
+                android:text="IT"
+                app:layout_constraintStart_toStartOf="@+id/itemLawyerName"
+                app:layout_constraintTop_toBottomOf="@+id/itemLawyerName" />
+
+            <ImageView
+                android:id="@+id/itemstar"
+                android:layout_width="@dimen/margin_intermediate"
+                android:layout_height="@dimen/margin_intermediate"
+                android:layout_marginTop="@dimen/margin_intermediate"
+                android:layout_marginEnd="@dimen/margin_xxxxxlarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/itemRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_xxxsmall"
+                android:textSize="@dimen/font_small"
+                app:layout_constraintBottom_toBottomOf="@+id/itemstar"
+                app:layout_constraintEnd_toStartOf="@+id/itemstar"
+                app:layout_constraintTop_toTopOf="@+id/itemstar"
+                tools:text="4.5" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/itemIsVerified"
+        android:layout_width="@dimen/margin_xxxlarge"
+        android:layout_height="@dimen/margin_xxxxlarge"
+        android:elevation="4dp"
+        android:maxWidth="@dimen/margin_medium"
+        android:maxHeight="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_xsmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/verified" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

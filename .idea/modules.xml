@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TestABA.iml" filepath="$PROJECT_DIR$/.idea/modules/TestABA.iml" group="TestABA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="TestABA/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="TestABA/core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core-test/core-test.iml" filepath="$PROJECT_DIR$/.idea/modules/core-test/core-test.iml" group="TestABA/core-test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib-theme/lib-theme.iml" filepath="$PROJECT_DIR$/.idea/modules/lib-theme/lib-theme.iml" group="TestABA/lib-theme" />
+    </modules>
+  </component>
+</project>
