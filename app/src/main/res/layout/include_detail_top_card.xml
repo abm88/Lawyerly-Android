@@ -26,7 +26,8 @@
                 android:layout_marginTop="@dimen/margin_xxsmall"
                 android:layout_marginEnd="@dimen/margin_xxxxlarge"
                 android:textColor="@color/colorGrey30"
-                android:textSize="@dimen/font_xxsmall"
+                android:fontFamily="@font/sans_light"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tool:text="@string/app_name" />
@@ -45,8 +46,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_small"
                 android:text="@string/FirstName"
-                android:textSize="@dimen/font_intermediate"
                 android:textStyle="bold"
+                android:fontFamily="@font/sans"
                 app:layout_constraintBottom_toBottomOf="@id/detailPersonalImage"
                 app:layout_constraintStart_toEndOf="@id/detailPersonalImage"
                 app:layout_constraintTop_toTopOf="@id/detailPersonalImage"
@@ -58,8 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_xxxxsmall"
                 android:text="@string/surname"
-                android:textSize="@dimen/font_intermediate"
-                android:textStyle="bold"
+                android:fontFamily="@font/sans"
                 app:layout_constraintStart_toStartOf="@id/detailFirstName"
                 app:layout_constraintTop_toBottomOf="@id/detailFirstName" />
 
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_xsmall"
                 android:text="@string/speciality"
-                android:textSize="@dimen/font_xsmall"
+                android:fontFamily="@font/sans_light"
                 app:layout_constraintStart_toStartOf="@+id/detailSurName"
                 app:layout_constraintTop_toBottomOf="@+id/detailSurName" />
 
@@ -80,7 +80,7 @@
                 android:layout_marginEnd="@dimen/margin_xxlarge"
                 android:layout_marginBottom="@dimen/margin_large"
                 android:text="$55.50"
-                android:textSize="@dimen/font_medium"
+                android:fontFamily="@font/sans_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 

@@ -12,4 +12,8 @@
     <color name="colorGrey30">#878686</color>
     <color name="colorGrey20">#656464</color>
 
+    <color name="colorGradientOne">#8BC34A</color>
+    <color name="colorGradientTwo">#FFEB3B</color>
+
+
 </resources>

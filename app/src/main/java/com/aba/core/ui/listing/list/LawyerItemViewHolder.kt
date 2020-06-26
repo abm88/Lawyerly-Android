@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.aba.core.R
 import com.aba.core.domain.data.LawyerDomainModel
 import com.aba.core.extension.show
+import com.aba.core.utils.LoadImage
 import kotlinx.android.extensions.LayoutContainer
+import kotlinx.android.synthetic.main.include_detail_top_card.*
 import kotlinx.android.synthetic.main.item_listing.view.*
 
 
@@ -35,18 +37,10 @@ class LawyerItemViewHolder(override val containerView: View,
         itemView.itemRating.text = item.rating.toString() ?: ""
         itemView.itemRate.text = item.rate.toString() ?: ""
         itemView.itemIsVerified.show(item.isBackgroundVerified)
-        applyRandomImage(itemView)
+        LoadImage.loadImage(itemView.itemImageView, item)
         itemView.itemContainer.setOnClickListener {
             callback.onLawyerItemClicked(item)
         }
-    }
-
-    private fun applyRandomImage(itemView: View) = when((Math.random() * 4).toInt()){
-        0 -> itemView.itemImageView.setImageResource(R.drawable.face1)
-        1 -> itemView.itemImageView.setImageResource(R.drawable.face2)
-        2 -> itemView.itemImageView.setImageResource(R.drawable.face3)
-        3 -> itemView.itemImageView.setImageResource(R.drawable.face4)
-        else -> itemView.itemImageView.setImageResource(R.drawable.face1)
     }
 
 }

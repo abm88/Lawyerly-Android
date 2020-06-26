@@ -1,12 +1,9 @@
 package com.aba.core.ui.main.main
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.aba.core.R
 import com.aba.core.base.BaseActivity
-import com.aba.core.extension.makeFullScreen
 import com.aba.core.ui.main.main.list.ListingAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.tabs.TabLayoutMediator
@@ -51,9 +48,8 @@ class MainActivity : BaseActivity() {
         viewPager.adapter = viewPagerAdapter
     }
 
-
     override fun onBackPressed() {
-        if (supportFragmentManager.backStackEntryCount > 0)
+        if (supportFragmentManager.fragments.size > 1)
             supportFragmentManager.popBackStack()
         else {
             super.onBackPressed()
@@ -62,5 +58,5 @@ class MainActivity : BaseActivity() {
     }
 
     fun navigateTo(fragment: Fragment) = supportFragmentManager.beginTransaction()
-        .add(R.id.mainActivityContainer, fragment).commit()
+        .add(R.id.mainActivityContainer, fragment).addToBackStack(null).commit()
 }

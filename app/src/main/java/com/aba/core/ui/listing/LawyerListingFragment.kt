@@ -41,7 +41,7 @@ class LawyerListingFragment : BaseFragment(), LawyerListingAdapter.LawyerAdapter
 
     override fun onLawyerItemClicked(item: LawyerDomainModel) {
         activity?.let {
-            (it as MainActivity).navigateTo(DetailFragment.newInstance())
+            (it as MainActivity).navigateTo(DetailFragment.newInstance(item))
         }
     }
 
@@ -83,6 +83,4 @@ class LawyerListingFragment : BaseFragment(), LawyerListingAdapter.LawyerAdapter
             loading.hide()
         }
     }
-
-
 }

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_xxsmall"
         android:text="2/18"
-        android:textSize="@dimen/font_intermediate"
+        android:fontFamily="@font/sans_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/detailRankingImageView"
         app:layout_constraintHorizontal_bias="0.5"
@@ -41,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/rating"
+        android:fontFamily="@font/sans_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailRanking" />

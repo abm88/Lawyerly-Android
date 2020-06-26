@@ -1,6 +1,5 @@
 package com.aba.core.ui.listing.list
 
-import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.aba.core.domain.data.LawyerDomainModel
 
