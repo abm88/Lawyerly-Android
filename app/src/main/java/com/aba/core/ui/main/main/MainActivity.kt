@@ -21,14 +21,12 @@ class MainActivity : BaseActivity() {
     override val contentResourceId: Int
         get() = R.layout.activity_main
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initializeBottomNavigation()
         initViewPager()
         initTabLayout()
     }
-
 
     private fun initTabLayout() {
         TabLayoutMediator(this.tabLayout, viewPager) { tab, position ->

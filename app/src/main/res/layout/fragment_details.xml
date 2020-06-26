@@ -52,7 +52,6 @@
         <include layout="@layout/include_detail_top_card" />
     </FrameLayout>
 
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -130,7 +129,6 @@
                         android:background="@color/colorGrey80" />
 
                 </FrameLayout>
-
 
                 <TextView
                     android:layout_width="wrap_content"

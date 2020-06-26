@@ -23,7 +23,6 @@ import org.mockito.junit.MockitoJUnitRunner
 @RunWith(MockitoJUnitRunner::class)
 class ListingViewModelTest {
 
-
     @Mock
     lateinit var mockUseCase: LawyerUseCase
 
@@ -56,7 +55,6 @@ class ListingViewModelTest {
 
     private val someErrorEntity = ErrorEntity.Network
 
-
     @Before
     fun setup() {
         observeLawyers()
@@ -70,7 +68,6 @@ class ListingViewModelTest {
         thenUseCaseExecuteCalled()
     }
 
-
     @Test
     fun `givenFailureResult whenOnSearch thenResultIsFailure`() {
         givenFailureResult()
@@ -79,15 +76,12 @@ class ListingViewModelTest {
         thenUseCaseExecuteCalled()
     }
 
-
     /*
      Given
      */
 
     private fun givenFailureResult() = given(mockUseCase.execute(any()))
         .willReturn(Observable.just(ResultResponse.Failure(someErrorEntity)))
-
-
 
     private fun givenSuccessfulResult() = given(mockUseCase.execute(any())).willReturn(
         Observable.just(ResultResponse.Success(listOf(someDomainModel)))
@@ -105,6 +99,7 @@ class ListingViewModelTest {
     /*
      Then
      */
+
     private fun thenUseCaseExecuteCalled() = verify(mockUseCase).execute(any())
 
 
@@ -115,10 +110,10 @@ class ListingViewModelTest {
     private fun thenResultIsFailure() =
         assertThat(testObserver.history).contains(ResultResponse.Failure(someErrorEntity))
 
-
     /*
      Helper
      */
+
     private fun observeLawyers() {
         subject.lawyerLiveData.observeForever(testObserver)
     }

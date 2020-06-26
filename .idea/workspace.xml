@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4dc5634-ad1f-437b-934c-c88a8d7295e0" name="Default Changelist" comment="" />
+    <list default="true" id="d4dc5634-ad1f-437b-934c-c88a8d7295e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aba/core/di/AndroidModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aba/core/di/AndroidModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/listing/LawyerListingFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/listing/LawyerListingFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/listing/ListingViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/listing/ListingViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/listing/di/ListingFragmentBinding.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/listing/di/ListingFragmentBinding.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/main/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/aba/core/ui/main/main/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_detail_rating.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_detail_rating.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/include_detail_reviews.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_detail_reviews.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/aba/core/ui/listing/ListingViewModelTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/aba/core/ui/listing/ListingViewModelTest.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

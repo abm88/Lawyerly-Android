@@ -5,7 +5,6 @@ import com.aba.core.ui.listing.LawyerListingFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
-
 @Module
 abstract class ListingFragmentBinding {
     @PerFragment

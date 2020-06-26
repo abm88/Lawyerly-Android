@@ -19,7 +19,6 @@ import javax.inject.Inject
 
 class LawyerListingFragment : BaseFragment(), LawyerListingAdapter.LawyerAdapterCallback {
 
-
     @Inject
     lateinit var adapter: LawyerListingAdapter<RecyclerView.ViewHolder>
 
@@ -29,7 +28,6 @@ class LawyerListingFragment : BaseFragment(), LawyerListingAdapter.LawyerAdapter
     val viewModel by lazy {
         viewModelFactory.create(ListingViewModel::class.java)
     }
-
 
     companion object {
         const val LISTING_KEY = "LISTING_KEY"
@@ -46,7 +44,6 @@ class LawyerListingFragment : BaseFragment(), LawyerListingAdapter.LawyerAdapter
             (it as MainActivity).navigateTo(DetailFragment.newInstance())
         }
     }
-
 
     override fun onCreateView(
         inflater: LayoutInflater,

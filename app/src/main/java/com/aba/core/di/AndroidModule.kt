@@ -12,7 +12,4 @@ class AndroidModule {
     @Singleton
     fun provideContext(application: Application) = application.applicationContext
 
-//    @Provides
-//    @Singleton
-//    fun provideTheme(): ThemeProvider = AppThemeProvider()
 }
